@@ -1,8 +1,12 @@
-﻿namespace LiveChatDemo.Shared.ChatContracts;
+﻿using System.Text.Json.Serialization;
+using LiveChatDemo.Shared.Dtos;
+
+namespace LiveChatDemo.Shared.ChatContracts;
 
 public interface IChatMessage
 {
-    IMessageSender Sender { get; set; }
+    // [JsonConverter(typeof(MessageSender))] Possible solution instead of using a custom converter
+    MessageSenderDto Sender { get; set; }
     string Message { get; set; }
     DateTime SentAt { get; set; }
 }

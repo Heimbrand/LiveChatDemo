@@ -18,4 +18,6 @@ app.MapGet("/message", async (IChattMessageRepository repo,int start, int count)
     return await repo.GetManyAsync(start, count);
 });
 
+
+
 app.Run();

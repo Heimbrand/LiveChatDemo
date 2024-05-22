@@ -16,8 +16,4 @@
     <ProjectReference Include="..\LiveChatDemo.Shared\LiveChatDemo.Shared.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Entities\" />
-  </ItemGroup>
-
 </Project>
